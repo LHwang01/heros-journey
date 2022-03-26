@@ -3063,11 +3063,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "The trial, titled the \"Trial of Ordeals\" is a tradition\nthat all knights,
-    going all the way back to the\nArthurian ages, had to take. Legend has it that
-    \nlegendary knight Siegfried himself undertook the \ntrial and was so successful
-    that King Arthur himself\nimmediately bowed before him and offered him \nthe
-    fabled Excalibur sword."
+  m_Text: "The trial, titled the \"Trial of Ordeals,\" is a tradition\nthat all knights,
+    going all the way back to the\nArthurian ages, have to take. Legend has it that
+    \nlegendary knight Siegfried undertook the trial \nand was so successful that
+    King Arthur himself\nimmediately bowed before him and offered him \nthe fabled
+    Excalibur sword."
 --- !u!222 &1683943596
 CanvasRenderer:
   m_ObjectHideFlags: 0

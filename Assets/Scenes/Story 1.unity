@@ -2069,7 +2069,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 250}
+  m_AnchoredPosition: {x: 0, y: 270}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1219513094
@@ -2105,18 +2105,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: 'You take the role of aspiring knight Lancelot III.
-
-    Tonight is your
-    20th winter in this world. All
-
-    those who wish to formally become a knight
-    and
-
-    work under King Clovis must pass a trial of
-
-    endurance, strength,
-    and honor. '
+  m_Text: "You take the role of aspiring knight and squire\nLancelot III. Tonight
+    is your 20th winter on this \nworld and you are now allowed to take the knight
+    \ntest.  All those who wish to formally become a \nknight and work under King
+    Clovis must pass a \ntrial of endurance, speed, and honor. "
 --- !u!222 &1219513095
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -1156,9 +1156,9 @@ MonoBehaviour:
     m_LineSpacing: 1.5
   m_Text: "The trial is simple yet challenging. The aspirant\n must collect as many
     gold chips around the \ngrounds as possible while avoiding the patrolling \nknights.
-    The trial ends once the candidate is \ncaught and apprehended by one  of the
-    knights. If \nthe  participant has obtained at least 10 coins at \nthat point,
-    they have passed."
+    The trial ends once the candidate is \ncaught and apprehended by one of the knights.
+    If \nthe  participant has obtained at least 10 coins at \nthat point, they have
+    passed."
 --- !u!222 &955996249
 CanvasRenderer:
   m_ObjectHideFlags: 0
