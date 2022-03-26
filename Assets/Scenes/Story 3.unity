@@ -498,7 +498,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441227581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30, y: 2, z: -10}
+  m_LocalPosition: {x: -8, y: -5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -719,7 +719,7 @@ Transform:
   m_GameObject: {fileID: 720598480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 20, y: 7, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children:
   - {fileID: 1638653389}
   - {fileID: 1344244792}
@@ -1154,7 +1154,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: The trial consists of
+  m_Text: "The trial is simple yet challenging. The aspirant\n must collect as many
+    gold chips around the \ngrounds as possible while avoiding the patrolling \nknights.
+    The trial ends once the candidate is \ncaught and apprehended by one  of the
+    knights. If \nthe  participant has obtained at least 10 coins at \nthat point,
+    they have passed."
 --- !u!222 &955996249
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2677,7 +2681,7 @@ Transform:
   m_GameObject: {fileID: 1680868398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 20, y: 7, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children:
   - {fileID: 1720877889}
   - {fileID: 847258454}
