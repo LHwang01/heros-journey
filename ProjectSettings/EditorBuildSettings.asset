@@ -23,4 +23,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Trial of Ordeals.unity
     guid: 02e8d67994ad8ee42806026ebb73ac18
+  - enabled: 1
+    path: Assets/Scenes/1. Knighthood Ending.unity
+    guid: 495cf637ccc5f9549983febc277504a6
+  - enabled: 1
+    path: Assets/Scenes/2. Senior Knight Ending.unity
+    guid: 852741e80954d9e4eadab4b615ff0184
+  - enabled: 1
+    path: Assets/Scenes/3. Elder Knight Ending.unity
+    guid: e7ec72b284724c54db5b74cd96b7c7ce
+  - enabled: 1
+    path: Assets/Scenes/4. Next Siegfried Ending.unity
+    guid: 1572e0b412047624a998c45c8f6aeb5a
   m_configObjects: {}
