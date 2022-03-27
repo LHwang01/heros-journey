@@ -1945,7 +1945,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 340}
+  m_AnchoredPosition: {x: -590, y: 340}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1192839179
@@ -1975,7 +1975,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 200
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
@@ -1983,9 +1983,9 @@ MonoBehaviour:
     m_LineSpacing: 1.5
   m_Text: "The more coins the participant aquires, the better. \nThe squire is not
     allowed to attack the knights in \nanyway and must only rely on their speed and
-    wit. \nOn an average year, only 2% of applicants achieve\n knighthood and no
-    squire obtains a higher ranking. \nNow, it is your turn to triumph Lancelot III!
-    \nGood luck and may fate be on your side."
+    wit. \nOn an average year, only 2% of applicants achieve\nknighthood and no squire
+    obtains a higher ranking. \nNow, it is your turn to triumph Lancelot III! Good
+    \nluck and may fate be on your side."
 --- !u!222 &1192839180
 CanvasRenderer:
   m_ObjectHideFlags: 0
