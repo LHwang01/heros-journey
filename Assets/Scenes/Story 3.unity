@@ -1168,7 +1168,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
   m_Text: "The trial is simple yet challenging. The aspirant\nmust collect as many
-    gold chips around the \ngrounds as possible while avoiding the patrolling \nknights.
+    gold stashes around the \ngrounds as possible while avoiding the patrolling \nknights.
     The trial ends once the candidate is \ncaught and apprehended by one of the knights.
     If \nthe participant has obtained at least 10 coins at \nthat point, they have
     passed."
