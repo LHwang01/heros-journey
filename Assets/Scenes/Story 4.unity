@@ -2077,7 +2077,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Begin!
+  m_Text: Continue
 --- !u!222 &1204019013
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3489,7 +3489,7 @@ GameObject:
   - component: {fileID: 1793540662}
   - component: {fileID: 1793540661}
   m_Layer: 5
-  m_Name: Begin
+  m_Name: Continue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3561,7 +3561,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 472870149}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: Begin
+        m_MethodName: GameInfo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

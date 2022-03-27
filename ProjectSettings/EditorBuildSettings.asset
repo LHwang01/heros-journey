@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Story 4.unity
     guid: 2d02a0c7aae442345bae1ec80bb0d2ef
   - enabled: 1
+    path: Assets/Scenes/Game Info.unity
+    guid: 58924540d2e2cca48860d4aa74fa0060
+  - enabled: 1
     path: Assets/Scenes/Trial of Ordeals.unity
     guid: 02e8d67994ad8ee42806026ebb73ac18
   - enabled: 1
