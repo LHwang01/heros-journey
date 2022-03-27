@@ -21,4 +21,8 @@ public class Buttons : MonoBehaviour
     public void Story4 () {
         SceneManager.LoadScene("Story 4");
     }
+
+    public void Begin() {
+        SceneManager.LoadScene("Trial of Ordeals");
+    }
 }
