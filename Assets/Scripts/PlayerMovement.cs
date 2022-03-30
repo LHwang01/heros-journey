@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rigidbody2d;
 
     [Header("Movement Settings")]
-    [SerializeField] float moveSpeed = 5f;
-    [SerializeField] float jumpPower = 10f;
+    [SerializeField] float moveSpeed = 7f;
+    [SerializeField] float jumpPower = 9f;
 
     [Header("Bools")]
     [SerializeField] bool isGrounded = false;
