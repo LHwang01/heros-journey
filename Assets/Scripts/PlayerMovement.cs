@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        
     }
 
     void Update()
@@ -24,5 +23,10 @@ public class PlayerMovement : MonoBehaviour
         Vector3 movement = new Vector3(horizontalMovement, verticalMovement, 0f);
 
         transform.position += movement * Time.deltaTime * speed;
+
+    }
+
+    private void Jump()
+    {
     }
 }

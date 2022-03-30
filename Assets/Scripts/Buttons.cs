@@ -26,6 +26,10 @@ public class Buttons : MonoBehaviour
         SceneManager.LoadScene("Game Info");
     }
 
+    public void GameInfo2 () {
+        SceneManager.LoadScene("Game Info 2");
+    }
+
     public void Begin() {
         SceneManager.LoadScene("Trial of Ordeals");
         Destroy(GameObject.Find("Main Menu Music"));
