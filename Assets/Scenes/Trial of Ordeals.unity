@@ -702,7 +702,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &920802900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -742,8 +742,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
-  jumpPower: 9
-  isGrounded: 0
+  jumpPower: 8
+  isGrounded: 1
 --- !u!1001 &1428138862
 PrefabInstance:
   m_ObjectHideFlags: 0
