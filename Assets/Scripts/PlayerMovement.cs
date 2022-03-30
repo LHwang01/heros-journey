@@ -4,29 +4,42 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float horizontalMovement;
-    [SerializeField] float verticalMovement;
-    [SerializeField] float speed = 10.0f;
+    Rigidbody2D rigidbody2d;
 
+    [Header("Movement Settings")]
+    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float jumpPower = 10f;
+
+    [Header("Bools")]
+    [SerializeField] bool isGrounded = false;
+
+
+    // Start is called before the first frame update
     void Start()
     {
+        rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
+    // Update is called once per frame
     void Update()
     {
-        horizontalMovement = Input.GetAxis("Horizontal");
-        verticalMovement = Input.GetAxis("Vertical");
+
+        Vector3 Move = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+        transform.position += Move * Time.deltaTime * moveSpeed;
+        Jump();
     }
 
-    private void FixedUpdate()
+    void Jump()
     {
-        Vector3 movement = new Vector3(horizontalMovement, verticalMovement, 0f);
-
-        transform.position += movement * Time.deltaTime * speed;
-
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
+        {
+            rigidbody2d.AddForce(new Vector2(0f, jumpPower), ForceMode2D.Impulse);
+            isGrounded = false;
+        }
     }
 
-    private void Jump()
+    void OnCollisionEnter2D(Collision2D other)
     {
+        isGrounded = true;
     }
 }
