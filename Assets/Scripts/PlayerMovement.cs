@@ -26,11 +26,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        Vector3 Move = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
 
         animator.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal") * moveSpeed));
 
-        transform.position += Move * Time.deltaTime * moveSpeed;
+        transform.position += move * Time.deltaTime * moveSpeed;
         Jump();
 
         if (Input.GetAxis("Horizontal") < 0 && isFacingRight || Input.GetAxis("Horizontal") > 0 && !isFacingRight)
