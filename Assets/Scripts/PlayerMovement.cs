@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Bools")]
     [SerializeField] bool isGrounded = false;
 
+    bool isFacingRight = true;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +27,16 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {   
         Vector3 Move = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+
+        animator.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal") * moveSpeed));
+
         transform.position += Move * Time.deltaTime * moveSpeed;
         Jump();
+
+        if (Input.GetAxis("Horizontal") < 0 && isFacingRight || Input.GetAxis("Horizontal") > 0 && !isFacingRight)
+        {
+            Flip();
+        }
     }
 
     void Jump()
@@ -41,5 +51,11 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         isGrounded = true;
+    }
+
+    void Flip()
+    {
+        transform.Rotate(0, 180, 0);
+        isFacingRight = !isFacingRight;
     }
 }
