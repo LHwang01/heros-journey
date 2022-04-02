@@ -748,7 +748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 920802902}
   moveSpeed: 7
-  jumpPower: 5
+  jumpPower: 7
   isGrounded: 1
 --- !u!95 &920802902
 Animator:
