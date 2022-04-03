@@ -13,6 +13,8 @@ public class SpawnChest : MonoBehaviour
         new Vector2(-8.4F, -3.6F),
     };
 
+
+
     public float delayInterval = 5;
 
     [SerializeField] GameObject chest;
@@ -30,6 +32,11 @@ public class SpawnChest : MonoBehaviour
 
     void SpawnRandChest()
     {
-        Instantiate(chest, positions[Random.Range(0, positions.Length)], Quaternion.identity);
+        Vector2 randomPosition = positions[Random.Range(0, positions.Length)];
+
+        if ((Physics2D.OverlapCircle(randomPosition, .3F)) == null) {
+            Instantiate(chest, randomPosition, Quaternion.identity);
+        }
+
     }
 }
