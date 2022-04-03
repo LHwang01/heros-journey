@@ -15,13 +15,13 @@ public class Spawn : MonoBehaviour
 
 
 
-    public float delayInterval = 5;
+    [SerializeField] float delayInterval;
 
     [SerializeField] GameObject obj;
 
     void Start()
     {
-        InvokeRepeating("SpawnRandChest", 1, delayInterval);
+        InvokeRepeating("SpawnRandom", 1, delayInterval);
     }
 
 
@@ -30,11 +30,14 @@ public class Spawn : MonoBehaviour
         
     }
 
-    void SpawnRandChest()
+    void SpawnRandom()
     {
         Vector2 randomPosition = positions[Random.Range(0, positions.Length)];
 
         if ((Physics2D.OverlapCircle(randomPosition, .3F)) == null) {
+            Instantiate(obj, randomPosition, Quaternion.identity);
+        } else {
+            Destroy(Physics2D.OverlapCircle(randomPosition, .3F).gameObject);
             Instantiate(obj, randomPosition, Quaternion.identity);
         }
 

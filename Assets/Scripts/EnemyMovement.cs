@@ -11,7 +11,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        transform.position += new Vector3(.1F, 0, 0);
+        transform.position += new Vector3(.01F, 0, 0);
 
         if (this.transform.position.x > 9 || this.transform.position.x < -9) {
             Destroy(gameObject);
