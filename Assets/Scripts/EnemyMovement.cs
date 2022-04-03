@@ -4,14 +4,25 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    bool isFacingRight;
+
     void Start()
     {
-        
+        if (this.transform.position.x > 7) {
+            isFacingRight = false;
+            transform.Rotate(0, 180, 0);
+        } else {
+            isFacingRight = true;
+        }
     }
 
     void Update()
     {
-        transform.position += new Vector3(.01F, 0, 0);
+        if (isFacingRight) {
+            transform.position += new Vector3(.01F, 0, 0);
+        } else {
+            transform.position += new Vector3(-.01F, 0, 0);
+        }
 
         if (this.transform.position.x > 9 || this.transform.position.x < -9) {
             Destroy(gameObject);
