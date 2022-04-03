@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnChest : MonoBehaviour
+public class Spawn : MonoBehaviour
 {
     Vector2[] positions = new Vector2[] {
         new Vector2(-8.4F, -1.2F),
@@ -17,7 +17,7 @@ public class SpawnChest : MonoBehaviour
 
     public float delayInterval = 5;
 
-    [SerializeField] GameObject chest;
+    [SerializeField] GameObject obj;
 
     void Start()
     {
@@ -35,7 +35,7 @@ public class SpawnChest : MonoBehaviour
         Vector2 randomPosition = positions[Random.Range(0, positions.Length)];
 
         if ((Physics2D.OverlapCircle(randomPosition, .3F)) == null) {
-            Instantiate(chest, randomPosition, Quaternion.identity);
+            Instantiate(obj, randomPosition, Quaternion.identity);
         }
 
     }
