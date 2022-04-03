@@ -51,11 +51,20 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         isGrounded = true;
+
+        if (other.gameObject.tag == "Collectible") {
+            Destroy(other.gameObject);
+        }
     }
 
     void Flip()
     {
         transform.Rotate(0, 180, 0);
         isFacingRight = !isFacingRight;
+    }
+    
+    void OnTriggerEnter2d(Collider2D other)
+    {
+        
     }
 }
