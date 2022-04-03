@@ -7,6 +7,7 @@ public class ScoreKeeper : MonoBehaviour
 {
     [SerializeField] Text score;
     [SerializeField] int scoreNum = 0;
+    [SerializeField] AudioSource bling;
 
     void Start()
     {
@@ -17,5 +18,6 @@ public class ScoreKeeper : MonoBehaviour
     {
         scoreNum += 10;
         score.text = "Score: " + scoreNum;
+        bling.Play();
     }
 }
