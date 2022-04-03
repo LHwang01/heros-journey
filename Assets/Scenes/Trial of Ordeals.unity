@@ -895,6 +895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 920802902}
+  scoreKeeper: {fileID: 1407237882}
   moveSpeed: 7
   jumpPower: 7
   isGrounded: 1

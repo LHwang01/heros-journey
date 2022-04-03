@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
     public Animator animator;
+    public ScoreKeeper scoreKeeper;
 
     [Header("Movement Settings")]
     [SerializeField] float moveSpeed = 7f;
@@ -53,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = true;
 
         if (other.gameObject.tag == "Collectible") {
+            scoreKeeper.increaseScore();
             Destroy(other.gameObject);
         }
     }

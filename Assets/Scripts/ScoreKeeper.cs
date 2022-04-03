@@ -13,9 +13,9 @@ public class ScoreKeeper : MonoBehaviour
         score.text = "Score: " + scoreNum;
     }
 
-
-    void Update()
+    public void increaseScore()
     {
-        
+        scoreNum += 10;
+        score.text = "Score: " + scoreNum;
     }
 }
