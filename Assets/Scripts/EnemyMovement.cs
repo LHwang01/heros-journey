@@ -12,6 +12,10 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(.1F, 0, 0);
+
+        if (this.transform.position.x > 9 || this.transform.position.x < -9) {
+            Destroy(gameObject);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D other)
