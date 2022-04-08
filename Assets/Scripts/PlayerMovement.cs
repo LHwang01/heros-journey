@@ -56,6 +56,8 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.tag == "Collectible") {
             scoreKeeper.increaseScore();
             Destroy(other.gameObject);
+        } else if (other.gameObject.tag == "Enemy") {
+            Destroy(this.gameObject);
         }
     }
 
