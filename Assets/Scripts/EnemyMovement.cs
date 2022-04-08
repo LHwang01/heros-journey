@@ -33,6 +33,9 @@ public class EnemyMovement : MonoBehaviour
     {
         if (other.gameObject.tag == "Collectible") {
             Destroy(other.gameObject);
+        } else if (other.gameObject.tag == "Enemy") {
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
         }
     }
 }
