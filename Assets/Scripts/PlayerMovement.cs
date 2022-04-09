@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rigidbody2d;
     public Animator animator;
     public ScoreKeeper scoreKeeper;
+    public Health health;
 
     [Header("Movement Settings")]
     [SerializeField] float moveSpeed = 7f;
@@ -57,7 +58,14 @@ public class PlayerMovement : MonoBehaviour
             scoreKeeper.increaseScore();
             Destroy(other.gameObject);
         } else if (other.gameObject.tag == "Enemy") {
-            Destroy(this.gameObject);
+            Destroy(other.gameObject);
+
+            int currentHealth = health.getHealth();
+            health.setHealth(currentHealth - 1);
+
+            if (currentHealth-1 == 0) {
+                Destroy(this.gameObject);
+            }
         }
     }
 

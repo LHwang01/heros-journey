@@ -31,4 +31,12 @@ public class Health : MonoBehaviour
             }
         }
     }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getHealth() {
+        return health;
+    }
 }
