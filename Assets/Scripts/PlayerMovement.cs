@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public ScoreKeeper scoreKeeper;
     public Health health;
 
+    [SerializeField] AudioSource sword;
+
     [Header("Movement Settings")]
     [SerializeField] float moveSpeed = 7f;
     [SerializeField] float jumpPower = 8f;
@@ -58,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
             scoreKeeper.increaseScore();
             Destroy(other.gameObject);
         } else if (other.gameObject.tag == "Enemy") {
+            sword.Play();
             Destroy(other.gameObject);
 
             int currentHealth = health.getHealth();
