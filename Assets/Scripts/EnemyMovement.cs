@@ -21,9 +21,9 @@ public class EnemyMovement : MonoBehaviour
 
         if (Time.timeScale != 0) {
             if (isFacingRight) {
-                transform.position += new Vector3(.01F, 0, 0);
+                transform.position += new Vector3(5F, 0, 0) * Time.deltaTime;
             } else {
-                transform.position += new Vector3(-.01F, 0, 0);
+                transform.position += new Vector3(-5F, 0, 0) * Time.deltaTime;
             }
         }
 
