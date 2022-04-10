@@ -597,15 +597,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'You now play a unique role. You work for the king but are on
-
-    a separate
-    level from him. You are his second-in-command,
-
-    top general, and strategizer.
-    Let''s hope your rule is as legendary
-
-    as your trial, Siegfried II.'
+  m_Text: "You are to now play a unique role. You work for the king but are \non
+    a separate level from him. You are his second-in-command,\ntop general, and strategizer.
+    Let's hope your rule is as legendary\nas your trial, Siegfried II."
 --- !u!222 &440914725
 CanvasRenderer:
   m_ObjectHideFlags: 0

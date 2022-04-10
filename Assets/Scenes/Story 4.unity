@@ -1994,11 +1994,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "The more coins the participant aquires, the better. \nThe squire is not
-    allowed to attack the knights in \nanyway and must only rely on their speed and
-    wit. \nOn an average year, only 2% of applicants achieve\nknighthood and no squire
-    obtains a higher ranking. \nNow, it is your turn to triumph, Lancelot III! Good
-    \nluck and may fate be on your side."
+  m_Text: "The more coins the participant acquires, the better. \nThe squire is not
+    allowed to attack the knights in \nany way and must only rely on their speed
+    and wit. \nOn an average year, only 2% of applicants achieve\nknighthood and
+    no squire obtains a higher ranking. \nNow, it is your turn to triumph, Lancelot
+    III! Good \nluck and may fate be on your side."
 --- !u!222 &1192839180
 CanvasRenderer:
   m_ObjectHideFlags: 0
