@@ -100,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
         } else if (endingScore > 1100 && endingScore <= 2000) {
             SceneManager.LoadScene("3. Elder Knight Ending");
         } else {
-            SceneManager.LoadScene("4. Next Siegfried Ending");
+            SceneManager.LoadScene("4. Next Siegfried Ending 1");
         }
     }
 }

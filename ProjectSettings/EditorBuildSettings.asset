@@ -44,4 +44,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/4. Next Siegfried Ending 1.unity
     guid: 1572e0b412047624a998c45c8f6aeb5a
+  - enabled: 1
+    path: Assets/Scenes/4. Next Siegfried Ending 2.unity
+    guid: 551efb0f6991e624199b7bfddffab8d1
+  - enabled: 1
+    path: Assets/Scenes/4. Next Siegfried Ending Part 3.unity
+    guid: dc11029295957f34dba39d1c95ffcffa
   m_configObjects: {}
