@@ -36,6 +36,10 @@ public class Buttons : MonoBehaviour
     }
 
     public void MainMenu() {
+        if (GameObject.Find("4. Next Siegfried Ending Music") != null) {
+            Destroy(GameObject.Find("4. Next Siegfried Ending Music"));
+        }
+
         SceneManager.LoadScene("Main Menu");
     }
 
