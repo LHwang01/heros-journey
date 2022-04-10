@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseNewGame : MonoBehaviour
 {
@@ -21,13 +22,19 @@ public class PauseNewGame : MonoBehaviour
         }
 
         if (Input.GetKey(KeyCode.N) == true) {
+            pauseMenu.SetActive(false);
             Time.timeScale = 0f;
             newGameMenu.SetActive(true);
         }
     }
     
-    void noNewGame() 
+    public void noNewGame() 
     {
+        Time.timeScale = 1f;
+        newGameMenu.SetActive(false);
+    }
 
+    public void newGame() {
+        SceneManager.LoadScene("Trial of Ordeals");
     }
 }
