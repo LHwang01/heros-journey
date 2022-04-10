@@ -68,7 +68,10 @@ public class PlayerMovement : MonoBehaviour
             int currentHealth = health.getHealth();
             health.setHealth(currentHealth - 1);
 
-            if (currentHealth-1 == 0) {
+            if (currentHealth - 1 == 0) {
+                moveSpeed = 0;
+                jumpPower = 0;
+                
                 anim.Play("Lancelot Capture Animation");
                 Destroy(this.gameObject, 1.5f);
             }
