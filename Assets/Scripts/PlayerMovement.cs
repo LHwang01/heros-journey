@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -37,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal") * moveSpeed));
 
         transform.position += move * Time.deltaTime * moveSpeed;
+
         Jump();
 
         if (Input.GetAxis("Horizontal") < 0 && isFacingRight || Input.GetAxis("Horizontal") > 0 && !isFacingRight)
@@ -71,9 +73,11 @@ public class PlayerMovement : MonoBehaviour
             if (currentHealth - 1 == 0) {
                 moveSpeed = 0;
                 jumpPower = 0;
-                
+
                 anim.Play("Lancelot Capture Animation");
                 Destroy(this.gameObject, 1.5f);
+
+                StartCoroutine(ChooseEnding(scoreKeeper.getScore()));
             }
         }
     }
@@ -84,8 +88,19 @@ public class PlayerMovement : MonoBehaviour
         isFacingRight = !isFacingRight;
     }
     
-    void OnTriggerEnter2d(Collider2D other)
-    {
-        
+    IEnumerator ChooseEnding(int endingScore) {
+        yield return new WaitForSeconds(1);
+
+        if (endingScore < 100) {
+            SceneManager.LoadScene("0. Game Over");
+        } else if (endingScore >= 100 && endingScore <= 500) {
+            SceneManager.LoadScene("1. Knighthood Ending");
+        } else if (endingScore >= 510 && endingScore <= 1000) {
+            SceneManager.LoadScene("2. Senior Knight Ending");
+        } else if (endingScore > 1100 && endingScore <= 2000) {
+            SceneManager.LoadScene("3. Elder Knight Ending");
+        } else {
+            SceneManager.LoadScene("4. Next Siegfried Ending");
+        }
     }
 }

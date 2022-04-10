@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Trial of Ordeals.unity
     guid: 02e8d67994ad8ee42806026ebb73ac18
   - enabled: 1
+    path: Assets/Scenes/0. Game Over.unity
+    guid: 288da2e0a4123dc42b9616e42d889986
+  - enabled: 1
     path: Assets/Scenes/1. Knighthood Ending.unity
     guid: 495cf637ccc5f9549983febc277504a6
   - enabled: 1

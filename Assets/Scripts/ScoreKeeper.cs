@@ -20,4 +20,8 @@ public class ScoreKeeper : MonoBehaviour
         score.text = "Score: " + scoreNum;
         bling.Play();
     }
+
+    public int getScore() {
+        return scoreNum;
+    }
 }
