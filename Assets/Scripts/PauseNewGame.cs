@@ -15,7 +15,7 @@ public class PauseNewGame : MonoBehaviour
             pauseSound.Play();
             Time.timeScale = 0f;
             pauseMenu.SetActive(true);
-        } else if (Input.anyKey) {
+        } else if (Input.GetKey(KeyCode.N) == false && Input.anyKey) {
             Time.timeScale = 1f;
             pauseMenu.SetActive(false);
         }
@@ -24,5 +24,10 @@ public class PauseNewGame : MonoBehaviour
             Time.timeScale = 0f;
             newGameMenu.SetActive(true);
         }
+    }
+    
+    void noNewGame() 
+    {
+
     }
 }
