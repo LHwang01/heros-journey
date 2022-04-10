@@ -18,10 +18,13 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        if (isFacingRight) {
-            transform.position += new Vector3(.01F, 0, 0);
-        } else {
-            transform.position += new Vector3(-.01F, 0, 0);
+
+        if (Time.timeScale != 0) {
+            if (isFacingRight) {
+                transform.position += new Vector3(.01F, 0, 0);
+            } else {
+                transform.position += new Vector3(-.01F, 0, 0);
+            }
         }
 
         if (this.transform.position.x > 9 || this.transform.position.x < -9) {
