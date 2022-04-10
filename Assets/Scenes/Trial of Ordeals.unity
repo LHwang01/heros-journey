@@ -668,6 +668,7 @@ GameObject:
   - component: {fileID: 390842101}
   - component: {fileID: 390842100}
   - component: {fileID: 390842099}
+  - component: {fileID: 390842102}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -723,6 +724,19 @@ Transform:
   m_Father: {fileID: 939878023}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &390842102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390842098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c07e9434649efcc43953a9fce72f7738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 775569693}
 --- !u!1001 &439065441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1307,7 +1321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &775569694
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2078,7 +2092,7 @@ MonoBehaviour:
     m_LineSpacing: 1.6
   m_Text: "You have three lives. If you get hit by the knight, you lose a life. Chests\nrandomly
     spawn throughout the map that you must obtain to gain points.\nKnights can steal
-    these chests. You must get at least 100 points to be \nknighted. Press any key
+    these chests. You must gain at least 100 points to be \nknighted. Press any key
     to continue."
 --- !u!222 &963845296
 CanvasRenderer:
@@ -3985,7 +3999,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 686.9, y: 692.5}
+  m_AnchoredPosition: {x: 686.9, y: 713.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1717532509
