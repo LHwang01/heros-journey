@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public ScoreKeeper scoreKeeper;
     public Health health;
 
+    Animator anim;
     [SerializeField] AudioSource sword;
 
     [Header("Movement Settings")]
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = gameObject.GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
@@ -67,7 +69,8 @@ public class PlayerMovement : MonoBehaviour
             health.setHealth(currentHealth - 1);
 
             if (currentHealth-1 == 0) {
-                Destroy(this.gameObject);
+                anim.Play("Lancelot Capture Animation");
+                Destroy(this.gameObject, 1.5f);
             }
         }
     }
