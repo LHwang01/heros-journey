@@ -38,4 +38,16 @@ public class Buttons : MonoBehaviour
     public void MainMenu() {
         SceneManager.LoadScene("Main Menu");
     }
+
+    public void NextSiegfried1() {
+        SceneManager.LoadScene("4. Next Siegfried Ending 1");
+    }
+
+    public void NextSiegfried2() {
+        SceneManager.LoadScene("4. Next Siegfried Ending 2");
+    }
+
+    public void NextSiegfried3() {
+        SceneManager.LoadScene("4. Next Siegfried Ending Part 3");
+    }
 }
