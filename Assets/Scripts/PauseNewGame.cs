@@ -25,6 +25,13 @@ public class PauseNewGame : MonoBehaviour
             pauseMenu.SetActive(false);
             Time.timeScale = 0f;
             newGameMenu.SetActive(true);
+        } else if (Input.GetKey(KeyCode.H) == false && Input.anyKey) {
+            if (Input.GetKey(KeyCode.Mouse0) || Input.GetKey(KeyCode.Mouse1)) {
+                return;
+            }
+
+            Time.timeScale = 1;
+            newGameMenu.SetActive(false);
         }
     }
     
