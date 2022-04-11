@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 395019885}
   - component: {fileID: 395019884}
   m_Layer: 0
-  m_Name: 2. Elder Knight Ending Music
+  m_Name: 2. Senior Knight Ending Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
